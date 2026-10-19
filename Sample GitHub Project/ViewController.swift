@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-   
+    var chloeLabel = UILabel() //chloe
     var label = UILabel()
     var stackView = UIStackView()
     
@@ -24,7 +24,8 @@ class ViewController: UIViewController {
         view.backgroundColor = .systemBackground
         
         label.text = "HELLOOOO"
-     
+        chloeLabel.text = "im chloe" //chloe
+
         stackView.axis = .vertical
         stackView.alignment = .center
         stackView.spacing = 25
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         stackView.addArrangedSubview(label)
+        stackView.addArrangedSubview(chloeLabel) //chloe
         
         view.addSubview(stackView)
         
