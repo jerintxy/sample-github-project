@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     var chloeLabel = UILabel() //chloe
     var label = UILabel()
+    var anotherLabel = UILabel()
     var stackView = UIStackView()
     
     override func viewDidLoad() {
@@ -26,6 +27,8 @@ class ViewController: UIViewController {
         label.text = "HELLOOOO"
         chloeLabel.text = "im chloe" //chloe
 
+        anotherLabel.text = "Yoooo"
+        anotherLabel.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.alignment = .center
         stackView.spacing = 25
@@ -34,6 +37,7 @@ class ViewController: UIViewController {
         
         stackView.addArrangedSubview(label)
         stackView.addArrangedSubview(chloeLabel) //chloe
+        stackView.addArrangedSubview(anotherLabel)
         
         view.addSubview(stackView)
         
